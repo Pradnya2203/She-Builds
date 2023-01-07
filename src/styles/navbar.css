@@ -1,0 +1,81 @@
+.link{
+    text-decoration: none;
+    margin-top: 29px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 65px;
+}
+
+.home{
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 30px;
+}
+
+.reg{
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 50px;
+}
+
+.oth{
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 50px;
+}
+
+.your{
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 50px;
+}
+
+.contact{
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 130px;
+    margin-top: 29px;
+}
+
+p{
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+.main-navbar{
+    display: flex;
+    flex-direction: row;
+}
