@@ -6,7 +6,7 @@ import 'reactjs-popup/dist/index.css';
 
 const RegisterComplaint = () => {
     return (
-        <div class="mainpage">
+        <div class="mainrc">
             <div className='rc'>
                 <div className='rc-margin-up'></div>
                 <p>Register Complaint as</p>

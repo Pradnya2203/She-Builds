@@ -1,9 +1,10 @@
 body{
-    background-color: #FFF1E1;
+    
 }
 
 .mainpage{
     display: flex;
+    background-color: #FFF1E1;
 }
 
 .form{
