@@ -6,7 +6,7 @@ const Verdict = () => {
         <div>
             <h2 className='logo'>Logo</h2>
            
-            <h1>Complaint ID:#11111</h1>
+            <h4 className="compID">Complaint ID:#11111</h4>
             <div className='rc'>
                 <div className='rc-margin-u'></div>
                 <p className='upp'>Verdicts</p>

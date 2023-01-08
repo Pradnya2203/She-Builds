@@ -7,7 +7,7 @@ const OtherComplaint = () => {
         <div className="upper-bar">
             <div className="box">
                 <p className='para'>Total Complaints</p>
-                <h1>200</h1>
+                <h1 className='number'>200</h1>
             </div>
             <div className="box">
                 <p className='para'>Pending Complaints</p>
