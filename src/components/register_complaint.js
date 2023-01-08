@@ -4,6 +4,8 @@ import Popup from 'reactjs-popup';
 import Pop from './popup';
 import 'reactjs-popup/dist/index.css';
 import Witness from './add_witness';
+import { Uploader } from "uploader"; // Installed by "react-uploader".
+import { UploadButton } from "react-uploader";
 
 const RegisterComplaint = () => {
     const [inputList, setInputList] = useState([]);
@@ -11,6 +13,13 @@ const RegisterComplaint = () => {
     const onAddBtnClick = event => {
       setInputList(inputList.concat(<Witness key={inputList.length} />));
     };  
+
+    const uploader = Uploader({
+        apiKey: "public_FW25b1Z7DsKxSv2uPzFtaHsVjS7D" // Get production API keys from Upload.io
+    });
+
+    const options = { multi: true };
+
 
     return (
         <div class="mainrc">
@@ -53,7 +62,15 @@ const RegisterComplaint = () => {
                 <p>Proof</p>
                 <div className='rc2-margin-down'></div>
            </div>
-            <button >+ Add File</button>
+           <UploadButton uploader={uploader}
+                            options={options}
+                            onComplete={files => alert(files.map(x => x.fileUrl).join("\n"))}>
+                {({onClick}) =>
+                <button onClick={onClick}>
+                   + Add File
+                </button>
+                }
+            </UploadButton>
             <div className='rc'>
                 <div className='rc-margin-up'></div>
                 <p>Witness</p>
