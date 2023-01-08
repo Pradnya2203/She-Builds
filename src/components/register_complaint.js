@@ -3,8 +3,15 @@ import '../styles/register_complaint.css'
 import Popup from 'reactjs-popup';
 import Pop from './popup';
 import 'reactjs-popup/dist/index.css';
+import Witness from './add_witness';
 
 const RegisterComplaint = () => {
+    const [inputList, setInputList] = useState([]);
+
+    const onAddBtnClick = event => {
+      setInputList(inputList.concat(<Witness key={inputList.length} />));
+    };  
+
     return (
         <div class="mainrc">
             <div className='rc'>
@@ -52,7 +59,7 @@ const RegisterComplaint = () => {
                 <p>Witness</p>
                 <div className='rc3-margin-down'></div>
            </div>
-            <button >+ Add Witness</button><br></br>
+            <button onClick={onAddBtnClick}>+ Add Witness</button>{inputList}<br></br>
             
             <Popup className='popup' trigger={<button type="submit">Register</button>} position="right center">
                 <div ><Pop /></div>
